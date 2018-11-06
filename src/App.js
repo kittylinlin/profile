@@ -5,6 +5,9 @@ import {
   Navigation,
   Drawer,
   Content,
+  Footer,
+  FooterSection,
+  FooterLinkList,
 } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './components/main';
@@ -16,7 +19,7 @@ const App = () => (
       <Header
         className="header-color"
         title={(
-          <span>Title</span>
+          <span>Profile</span>
         )}
       >
         <Navigation>
@@ -39,6 +42,14 @@ const App = () => (
       <Content>
         <Main />
       </Content>
+      <Footer size="mini">
+        <FooterSection type="left" logo="Title">
+          <FooterLinkList>
+            <p>Help</p>
+            <p>Privacy & Terms</p>
+          </FooterLinkList>
+        </FooterSection>
+      </Footer>
     </Layout>
   </div>
 );
