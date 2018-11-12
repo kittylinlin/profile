@@ -18,21 +18,17 @@ const App = () => (
     <Layout fixedHeader>
       <Header
         className="header-color"
-        title={(
-          <span>Profile</span>
-        )}
+        title={<Link style={{ textDecoration: 'none', color: 'white' }} to="/">Profile</Link>}
       >
         <Navigation>
-          <Link to="/">Home</Link>
           <Link to="/resume">Resume</Link>
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </Navigation>
       </Header>
-      <Drawer title="Title">
+      <Drawer title={<Link style={{ textDecoration: 'none', color: 'black' }} to="/">Profile</Link>}>
         <Navigation>
-          <Link to="/">Home</Link>
           <Link to="/resume">Resume</Link>
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>

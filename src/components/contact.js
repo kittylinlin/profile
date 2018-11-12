@@ -29,7 +29,7 @@ const Contact = () => (
             <ListItem>
               <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton' }}>
                 <i className="fa fa-envelope-square" aria-hidden="true" />
-                familiar0304@gmail.com
+                Test Email
               </ListItemContent>
             </ListItem>
           </List>
