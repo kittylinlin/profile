@@ -1,10 +1,9 @@
 import React from 'react';
-import { Grid, Cell } from 'react-mdl';
 
 const Landing = () => (
-  <div style={{ width: '100%', margin: 'auto' }}>
-    <Grid className="landing-grid">
-      <Cell col={12}>
+  <div className="landing-body">
+    <div className="landing-grid">
+      <div>
         <i className="fa fa-user-circle" style={{ 'font-size': '10em', 'padding-top': '0.5em' }} aria-hidden="true" />
         <div className="banner-text">
           <h1>Software Engineer</h1>
@@ -19,8 +18,8 @@ const Landing = () => (
             </a>
           </div>
         </div>
-      </Cell>
-    </Grid>
+      </div>
+    </div>
   </div>
 );
 

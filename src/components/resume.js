@@ -5,7 +5,7 @@ import Experience from './experience';
 import Skill from './skill';
 
 const Resume = () => (
-  <div>
+  <div className="resume-body">
     <Grid>
       <Cell col={4}>
         <div style={{ textAlign: 'center' }}>

@@ -1,0 +1,46 @@
+nav {
+  list-style: none;
+  background-color: #2A2A2A;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    float: right;
+  }
+
+  a:hover {
+    color: #EB9035;
+  }
+
+  a.current {
+    color: #EB9035;
+  }
+
+  a:first-child {
+    padding: 20px;
+    float: left;
+  }
+}
+
+
+.fa-circle {
+  color: #EB9035;
+}
+
+.fa-stack {
+  font-size: 30px;
+  top: -10px;
+}
+
+.fa-stack:hover .fa-circle {
+  color: #C1762A;
+}

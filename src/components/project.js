@@ -13,7 +13,7 @@ import {
   IconButton,
 } from 'react-mdl';
 
-class Projects extends Component {
+class Project extends Component {
   constructor(props) {
     super(props);
     this.state = { activeTab: 0 };
@@ -23,7 +23,7 @@ class Projects extends Component {
     const { activeTab } = this.state;
     if (activeTab === 0) {
       return (
-        <div className="projects-grid">
+        <div className="project-grid">
           {/* project 1 */}
           <Card shadow={5} style={{ minwidth: '450', margin: 'auto' }}>
             <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png) center / cover' }}>React Project #1</CardTitle>
@@ -60,7 +60,7 @@ class Projects extends Component {
   render() {
     const { activeTab } = this.state;
     return (
-      <div className="caregory-tabs">
+      <div className="project-body">
         <Tabs
           activeTab={activeTab}
           onChange={tabId => this.setState({ activeTab: tabId })}
@@ -79,4 +79,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Project;
